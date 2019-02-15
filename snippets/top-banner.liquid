@@ -1,0 +1,15 @@
+<style>
+  .top-banner{
+    width: 100%;
+    text-align: center;
+    color: #000;
+    background: #eee;
+    font-size: 14px;
+  }
+</style>
+
+{% if settings.enable_top_banner %}
+<div class="top-banner"> 
+  {{ settings.top_banner }}
+</div>
+{% endif; %}
